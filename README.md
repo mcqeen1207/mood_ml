@@ -5,9 +5,9 @@ This repository provides the code for implementing the trained XGBoost mood pred
 ### File description
 
 test.csv: sample data set including 36 sleep and circadian indexes  
-Expected outcome (de).csv: date (1st column), probability of no depressive episode (2nd column), Probability of depressive episode (3rd column)  
-Expected outcome (me).csv: date (1st column), probability of no manic episode (2nd column), Probability of manic episode (3rd column)  
-Expected outcome (hme).csv: date (1st column), probability of no hypomanic episode (2nd column), Probability of hypomanic episode (3rd column)  
+expected outcome (de).csv: date (1st column), probability of no depressive episode (2nd column), probability of depressive episode (3rd column)  
+expected outcome (me).csv: date (1st column), probability of no manic episode (2nd column), probability of manic episode (3rd column)  
+expected outcome (hme).csv: date (1st column), probability of no hypomanic episode (2nd column), probability of hypomanic episode (3rd column)  
 XGBoost_DE.pkl: the trained XGBoost model predicting depressive episodes  
 XGBoost_ME.pkl: the trained XGBoost model predicting manic episodes  
 XGBoost_HME.pkl: the trained XGBoost model predicting hypomanic episodes  
