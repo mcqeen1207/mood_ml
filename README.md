@@ -5,6 +5,9 @@ This repository provides the code for implementing the trained XGBoost mood pred
 ### File description
 
 test.csv: sample data set including 36 sleep and circadian indexes  
+Expected outcome (de).csv: date (1st column), probability of no depressive episode (2nd column), Probability of depressive episode (3rd column)  
+Expected outcome (me).csv: date (1st column), probability of no manic episode (2nd column), Probability of manic episode (3rd column)  
+Expected outcome (hme).csv: date (1st column), probability of no hypomanic episode (2nd column), Probability of hypomanic episode (3rd column)  
 XGBoost_DE.pkl: the trained XGBoost model predicting depressive episodes  
 XGBoost_ME.pkl: the trained XGBoost model predicting manic episodes  
 XGBoost_HME.pkl: the trained XGBoost model predicting hypomanic episodes  
@@ -24,8 +27,11 @@ Required Packges:
   pandas  
   pickle
 
-Optionally, 'time' package is needed to calculate the run time. However, it is not crucial to get outcome of the 'mood_ml.ipynb' code. 
+Optionally, 'time' package is needed to calculate the run time. However, it is not crucial to get outcome of the 'mood_ml.ipynb' code.  
+Installation of these packages typically takes 5~8 sec. 
 
 ### Expected outcome and run time
 
-'mood_ml.ipynb' codes includes four cells. Among them, the fourth cell is the most important cell which gives the probability 
+'mood_ml.ipynb' codes includes four cells. Among them, the fourth cell is the most important cell which gives the probability  
+Expected run time for the second cell, which imports the 'test.csv' and trained models, is 2.089 second.  
+Expected run time for the fourth cell, which calculates the probability of mood episodes is 0.029 second.  
