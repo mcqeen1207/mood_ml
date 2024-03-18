@@ -4,6 +4,9 @@ This repository provides the code for implementing the trained XGBoost mood pred
 
 ### File description
 
+example.csv: example of sleep data before calculating the sleep and circadian indexes. It consists of 'sleep_start', 'sleep_end', 'time_in_bed', 'minutes_sleep', and 'minutes_awake'   
+&emsp 
+mnsd.p: functions 
 test.csv: sample data set including 36 sleep and circadian indexes  
 expected outcome (de).csv: date (1st column), probability of no depressive episode (2nd column), probability of depressive episode (3rd column)  
 expected outcome (me).csv: date (1st column), probability of no manic episode (2nd column), probability of manic episode (3rd column)  
@@ -20,8 +23,9 @@ For the simulation of human circadian pacemaker, we utilize the codes in https:/
 
 ### Required packages
 
-All codes are written in Python 3.  
-All codes can be implemented unless the users installed Python 3 and Jupyter notebook
+'mnsd.p' and 'Index_calculation.m' is witten in MATLAB R2022b.
+'mood_ml.ipynb' is written in Python 3.  
+All codes can be implemented unless the users installed Python 3, Jupyter notebook, and Matlab.
 Required Packges:  
 
   pandas  
