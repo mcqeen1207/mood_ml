@@ -4,22 +4,23 @@ This repository provides the code for implementing the trained XGBoost mood pred
 
 ### File description
 
-example.csv: example of sleep data before calculating the sleep and circadian indexes. It consists of 'sleep_start', 'sleep_end', 'time_in_bed', 'minutes_sleep', and 'minutes_awake'   
-&emsp; 'sleep_start': the starting time of sleep window (ex) '2024-01-01 22:00'
-&emsp; 'sleep_end': the end time of sleep window (ex) '2024-01-02 06:00' 
-&emsp; 'time_in_bed': the duration (in minutes) of sleep window (ex) 480
-&emsp; 'minutes_sleep': the total sleep time (in minutes) during the sleep window (ex) 475
-&emsp; 'minutes_awake': the wake time (in minutes) during the sleep window (ex) 5
+'example.csv': example of sleep data before calculating the sleep and circadian indexes. It consists of 'sleep_start', 'sleep_end', 'time_in_bed', 'minutes_sleep', and 'minutes_awake'   
+&emsp; 'sleep_start': the starting time of sleep window (ex) '2024-01-01 22:00'  
+&emsp; 'sleep_end': the end time of sleep window (ex) '2024-01-02 06:00'  
+&emsp; 'time_in_bed': the duration (in minutes) of sleep window (ex) 480  
+&emsp; 'minutes_sleep': the total sleep time (in minutes) during the sleep window (ex) 475  
+&emsp; 'minutes_awake': the wake time (in minutes) during the sleep window (ex) 5  
 
-mnsd.p: functions for calculating 36 sleep and circadian indexes
-test.csv: sample data set including 36 sleep and circadian indexes  
-expected outcome (de).csv: date (1st column), probability of no depressive episode (2nd column), probability of depressive episode (3rd column)  
-expected outcome (me).csv: date (1st column), probability of no manic episode (2nd column), probability of manic episode (3rd column)  
-expected outcome (hme).csv: date (1st column), probability of no hypomanic episode (2nd column), probability of hypomanic episode (3rd column)  
-XGBoost_DE.pkl: the trained XGBoost model predicting depressive episodes  
-XGBoost_ME.pkl: the trained XGBoost model predicting manic episodes  
-XGBoost_HME.pkl: the trained XGBoost model predicting hypomanic episodes  
-mood_ml.ipynb: the Jupyter notebook code for predicting the mood episodes using the trained models.  
+'mnsd.p': functions for calculating 36 sleep and circadian indexes  
+'Index_calculation.m': Matlab code for calculating sleep and circadian indexes and save it as an csv file  
+'test.csv': sample data set including 36 sleep and circadian indexes (output of the 'Index_calculation.m' file)  
+'expected outcome (de).csv': date (1st column), probability of no depressive episode (2nd column), probability of depressive episode (3rd column)  
+'expected outcome (me).csv': date (1st column), probability of no manic episode (2nd column), probability of manic episode (3rd column)  
+'expected outcome (hme).csv': date (1st column), probability of no hypomanic episode (2nd column), probability of hypomanic episode (3rd column)  
+'XGBoost_DE.pkl': the trained XGBoost model predicting depressive episodes  
+'XGBoost_ME.pkl': the trained XGBoost model predicting manic episodes  
+'XGBoost_HME.pkl': the trained XGBoost model predicting hypomanic episodes  
+'mood_ml.ipynb': the Jupyter notebook code for predicting the mood episodes using the trained models.  
 
 For the calculation of sleep indexes, we referred to the following paper:  
 Katori et al., The 103,200-arm acceleration dataset in the UK Biobank revealed a landscape of human sleep phenotypes. PNAS (2022)
