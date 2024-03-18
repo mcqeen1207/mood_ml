@@ -30,12 +30,13 @@ For the simulation of human circadian pacemaker, we referred to the codes in htt
 
 'mnsd.p' and 'Index_calculation.m' is witten in MATLAB R2022b.
 'mood_ml.ipynb' is written in Python 3.  
-All codes can be implemented unless the users installed Python 3, Jupyter notebook, and Matlab.
-Required Packges in Matlab:  
+All codes can be implemented unless the users installed Python 3, Jupyter notebook, and Matlab.  
+  
+Required Packages in Matlab:  
 
   findpeaks (in 'signal processing toolbox')
   
-Required Packges in Python:  
+Required Packages in Python:  
 
   pandas  
   pickle
@@ -44,6 +45,9 @@ Optionally, 'time' package is needed to calculate the run time. However, it is n
 Installation of these packages typically takes 5~8 sec. 
 
 ### Expected outcome and run time
+
+Run time for calculating sleep and circadian indexes depends on the size of data.  
+For 'example.csv', it takes 7.125 seconds.
 
 'mood_ml.ipynb' codes includes four cells. Among them, the fourth cell is the most important cell which gives the probability  
 Expected run time for the second cell, which imports the 'test.csv' and trained models, is 2.089 second.  
