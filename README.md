@@ -10,7 +10,6 @@ This repository provides the code for implementing the trained XGBoost mood pred
 &emsp; 'time_in_bed': the duration (in minutes) of sleep window (ex) 480  
 &emsp; 'minutes_sleep': the total sleep time (in minutes) during the sleep window (ex) 475  
 &emsp; 'minutes_awake': the wake time (in minutes) during the sleep window (ex) 5  
-
 'mnsd.p': functions for calculating 36 sleep and circadian indexes  
 'Index_calculation.m': Matlab code for calculating sleep and circadian indexes and save it as an csv file  
 'test.csv': sample data set including 36 sleep and circadian indexes (output of the 'Index_calculation.m' file)  
@@ -25,14 +24,18 @@ This repository provides the code for implementing the trained XGBoost mood pred
 For the calculation of sleep indexes, we referred to the following paper:  
 Katori et al., The 103,200-arm acceleration dataset in the UK Biobank revealed a landscape of human sleep phenotypes. PNAS (2022)
 
-For the simulation of human circadian pacemaker, we utilize the codes in https://github.com/ojwalch/predicting_dlmo
+For the simulation of human circadian pacemaker, we referred to the codes in https://github.com/ojwalch/predicting_dlmo
 
 ### Required packages
 
 'mnsd.p' and 'Index_calculation.m' is witten in MATLAB R2022b.
 'mood_ml.ipynb' is written in Python 3.  
 All codes can be implemented unless the users installed Python 3, Jupyter notebook, and Matlab.
-Required Packges:  
+Required Packges in Matlab:  
+
+  findpeaks (in 'signal processing toolbox')
+  
+Required Packges in Python:  
 
   pandas  
   pickle
