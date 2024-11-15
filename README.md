@@ -2,6 +2,15 @@
 
 This repository provides the code for implementing the trained XGBoost mood prediction models for the paper, "Highly Accurate Prediction of Mood Episodes in Mood Disorder Patients Using Sleep and Circadian Rhythm Features from Wearables".
 
+### User guide
+
+**[Calculating sleep and circadian indexes]** 
+(1) Upload the sleep record in the 'example.csv' (File format should be matched with 'example.csv' file)  
+(2) Download (i) 'example.csv', (ii) 'Index_calculation.m', and (iii) 'mnsd.p', putting these 3 files in same directory.  
+(3) Run the 'Index_calculation.m'. It will 
+
+**[Estimating mood episodes with pre-trained model]**
+
 ### File description
 
 'example.csv': example of sleep data before calculating the sleep and circadian indexes. It consists of 'sleep_start', 'sleep_end', 'time_in_bed', 'minutes_sleep', and 'minutes_awake'   
